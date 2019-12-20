@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>美食菜单</title>
+    <link type="text/css" rel="stylesheet"
+          href="css/cai.css"/>
+    <link type="text/css" rel="stylesheet"
+                                        href="css/tang.css"/>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/cwl_2.js"></script>
+    <script src="js/tang.js"></script>
+
+</head>
+<body>
+<div class="HD">
+    <div class="header">
+        <div class="header_log">
+            <img src="images/wan/header/meishijie.png" >
+        </div>
+        <form  class="header_txt">
+            <input type="text" class="text" value="请输入菜谱/食材/菜单/作者" id="first">
+            <input type="submit" class="submit" value="搜 索" id="second">
+        </form>
+        <div class="header_deng">
+            <ul class="deng_1">
+                <li><img src="images/wan/header/kw.gif" class="img1"><a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=100233147&redirect_uri=http://i.meishi.cc/connect/callback.php?site=qq&state=bd1747373fd6496b77d39ae5d609bc11&scope=get_user_info,add_share,list_album,add_album,upload_pic,add_topic,add_one_blog,add_weibo,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idolist,add_idol,del_idol,get_tenpay_addr" >QQ登陆</a></li>
+                <li><img src="images/wan/header/kw.gif" class="img2"><a href="">微博登陆</a></li>
+            </ul>
+            <ul class="deng_2">
+                <li><a>登陆</a></li>
+                <li><a>注册</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="DH">
+    <div class="daohang">
+        <ul>
+            <li class="daohang_hr"><a class="dh_a" target="_blank" href="lin.html"><strong class="cwl">首页</strong></a>
+            </li>
+            <li><a class="dh_a" target="_blank" href="ling.html"><strong>菜谱大全</strong><img src="images/wan/daohang/blus.gif" class="blus"></a>
+                <div class="MS CO">
+                    <div class="menus">
+                        <div class="homely">
+                            <dl><a>家常菜谱</a></dl>
+                            <dt><a>家常菜</a></dt>
+                            <dt><a>凉菜</a></dt>
+                            <dt><a>素食</a></dt>
+                            <dt><a>晚餐</a></dt>
+                            <dt><a>私藏菜</a></dt>
+                            <dt><a>热菜</a></dt>
+                            <dt><a>海鲜</a></dt>
+                            <dt><a>孕妇</a></dt>
+                            <dt><a>早餐</a></dt>
+                            <dt><a>午餐</a></dt>
+                            <dt><a>甜品点心</a></dt>
+                            <dt><a>汤粥</a></dt>
+                            <dt><a>宝宝食谱-婴儿食谱</a></dt>
+                            <dt><a>糕点主食</a></dt>
+                            <dt><a>微波炉</a></dt>
+                        </div>
+                        <div class="menu">
+                            <dl><a>中华菜系</a></dl>
+                            <dt><a>川菜</a></dt>
+                            <dt><a>粤菜</a></dt>
+                            <dt><a>东北菜</a></dt>
+                            <dt><a>湘菜</a></dt>
+                            <dt><a>鲁菜</a></dt>
+                            <dt><a>浙菜</a></dt>
+                            <dt><a>湖北菜</a></dt>
+                            <dt><a>清蒸菜</a></dt>
+                        </div>
+                        <div class="menu">
+                            <dl><a>各地小吃</a></dl>
+                            <dt><a>四川小吃</a></dt>
+                            <dt><a>广东小吃</a></dt>
+                            <dt><a>北京小吃</a></dt>
+                            <dt><a>陕西小吃</a></dt>
+                        </div>
+                        <br/>
+                        <div class="menu">
+                            <dl><a>外国菜谱</a></dl>
+                            <dt><a>韩国料理</a></dt>
+                            <dt><a>日本料理</a></dt>
+                            <dt><a>法国菜</a></dt>
+                            <dt><a>意大利餐</a></dt>
+                        </div>
+                        <div class="menu">
+                            <dl><a>烘培</a></dl>
+                            <dt><a>蛋糕面包</a></dt>
+                            <dt><a>饼干配方</a></dt>
+                            <dt><a>甜品点心</a></dt>
+                        </div>
+                        <br/>
+                        <div class="menu">
+                            <dl><a>厨房百科</a></dl>
+                            <dt><a>摆盘围边</a></dt>
+                            <dt><a>烹饪技巧</a></dt>
+                            <dt><a>生活妙招</a></dt>
+                            <dt><a>美食专题</a></dt>
+                        </div>
+                        <div class="menu">
+                            <dl><a>食材百科</a></dl>
+                            <dt><a>蔬菜</a></dt>
+                            <dt><a>水果</a></dt>
+                            <dt><a>谷类</a></dt>
+                        </div>
+                    </div>
+                    <img src="images/wan/daohang/pangxie.png">
+                </div>
+            </li>
+            <li><a class="dh_a" target="_blank" href="zhen.html"><strong>饮食健康</strong><img src="images/wan/daohang/blus.gif" class="blus"></a>
+                <div class="FH CO">
+                    <div class="foods">
+                        <div class="health">
+                            <dl><a>饮食健康</a></dl>
+                            <dt><a>饮食小常识</a></dt>
+                            <dt><a>美容瘦身</a></dt>
+                            <dt><a>食品安全</a></dt>
+                            <dt><a>养生妙方</a></dt>
+                            <dt><a>饮食禁忌</a></dt>
+                            <dt><a>中医保健</a></dt>
+                            <dt><a>母婴健康饮食</a></dt>
+                            <dt><a>饮食新闻</a></dt>
+                        </div>
+                        <div class="health">
+                            <dl><a>功能性调理</a></dl>
+                            <dt><a>清热去火</a></dt>
+                            <dt><a>减肥</a></dt>
+                            <dt><a>祛痰</a></dt>
+                            <dt><a>乌发</a></dt>
+                            <dt><a>滋阴补肾</a></dt>
+                            <dt><a>健脾开胃</a></dt>
+                            <dt><a>消化不良</a></dt>
+                            <dt><a>清热解毒</a></dt>
+                            <dt><a>补阳壮阳</a></dt>
+                            <dt><a>增肥</a></dt>
+                        </div>
+                        <div class="health">
+                            <div class="health_f">
+                                <dl><a>人群膳食</a></dl>
+                                <dt><a>孕妇</a></dt>
+                                <dt><a>老人</a></dt>
+                                <dt><a>产妇</a><dt>
+                                <dt><a>哺乳期</a></dt>
+                                <dt><a>青少年</a></dt>
+                                <dt><a>幼儿</a></dt>
+                                <dt><a>学龄期儿童</a><dt>
+                            </div>
+                            <div class="health_f">
+                                <dl><a>疾病调理</a></dl>
+                                <dt><a>糖尿病</a></dt>
+                                <dt><a>高血压</a></dt>
+                                <dt><a>痛风</a></dt>
+                                <dt><a>胃炎</a></dt>
+                                <dt><a>痔疮</a></dt>
+                                <dt><a>更年期</a></dt>
+                                <dt><a>甲状腺</a></dt>
+                            </div>
+                        </div>
+                        <div class="health">
+                            <dl><a>脏腑调理</a></dl>
+                            <dt><a>补肾</a></dt>
+                            <dt><a>阳痿早泄</a></dt>
+                            <dt><a>补血</a></dt>
+                            <dt><a>便秘</a></dt>
+                            <dt><a>腹泻</a></dt>
+                            <dt><a>活血化瘀</a></dt>
+                        </div>
+                    </div>
+                    <img src="images/wan/daohang/shucai.png">
+                </div>
+            </li>
+            <li><a class="dh_a" target="_blank" href="tang.html"><strong>美食菜单</strong></a></li>
+            <li><a class="dh_a"><strong>家居馆</strong></a></li>
+            <li class="daohang_md"><a class="dh_a" target="_blank" href="yi.html"><strong>美食达人</strong><img src="images/wan/daohang/huangguan.png" ></a></li>
+            <li><a class="dh_a"><strong>菜谱视频</strong></a></li>
+            <li><a class="dh_a"><strong>产品下载</strong></a></li>
+        </ul>
+    </div>
+</div>
+<div class="CT">
+    <div class="content">
+        <div class="ct_top">
+            <div class="top1"> 菜单是你的一桌饭</div>
+            <div class="top2"><a>最新</a> <a>最热</a></div>
+        </div>
+        <div class="ct_bottom">
+            <div class="c_t">
+                <div class="cb">
+                    <div class="cbt">
+                        <p class="cb_1">我的菜单</p>
+                        <p class="cb_2"><span>10</span>篇菜谱</p>
+                    </div>
+                    <div class="cbb">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="li_1"><p>2017-03-12 10:22</p></li>
+                                    <li class="li_2">
+                                        <img src="images/hua/杰米1401918110.png" class="tang_1">
+                                        <span>三季雨花</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/hua/寿司.jpg" class="li_img"/>
+                                <div class="name_t">寿司</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/土豆鱼面.jpg" class="li_img"/>
+                                <div class="name_t">土豆鱼面</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/杂果紫薯糕.jpg" class="li_img"/>
+                                <div class="name_t">杂果紫薯糕</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/红枣南瓜发糕.jpg" class="li_img"/>
+                                <div class="name_t">红枣南瓜发糕</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/南瓜小米糕.jpg" class="li_img"/>
+                                <div class="name_t">南瓜小米糕</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="c_t">
+                <div class="cb">
+                    <div class="cbt">
+                        <p class="cb_1">我的菜单</p>
+                        <p class="cb_2"><span>10</span>篇菜谱</p>
+                    </div>
+                    <div class="cbb">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="li_1"><p>2015-04-12 07:22</p></li>
+                                    <li class="li_2">
+                                        <img src="images/hua/习惯微笑2.png" class="tang_1">
+                                        <span>习惯微笑</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/hua/水晶素包子2.jpg" class="li_img"/>
+                                <div class="name_t">水晶素包子</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/面条新吃法2.jpg" class="li_img"/>
+                                <div class="name_t">面条新吃法</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/孜然土豆片2.jpg" class="li_img"/>
+                                <div class="name_t">孜然土豆片</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/煎饼果子2.jpg" class="li_img"/>
+                                <div class="name_t">煎饼果子</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/草莓蛋糕2.jpg" class="li_img"/>
+                                <div class="name_t">草莓蛋糕</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="c_t">
+                <div class="cb">
+                    <div class="cbt">
+                        <p class="cb_1">我的菜单</p>
+                        <p class="cb_2"><span>10</span>篇菜谱</p>
+                    </div>
+                    <div class="cbb">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="li_1"><p>2016-05-12 11:55</p></li>
+                                    <li class="li_2">
+                                        <img src="images/hua/杨娇2818.png" class="tang_1">
+                                        <span>佛系玩家宿愿</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/hua/宝媚娘4.jpg" class="li_img"/>
+                                <div class="name_t">宝媚娘</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/广西美食~马打滚4.jpg" class="li_img"/>
+                                <div class="name_t">广西美食~马打滚</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/豆沙糯米卷4.jpg" class="li_img"/>
+                                <div class="name_t">豆沙糯米卷</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/秘制肉酱4.jpg" class="li_img"/>
+                                <div class="name_t">秘制肉酱</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/三杯鸡4.jpg" class="li_img"/>
+                                <div class="name_t">三杯鸡</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="c_t">
+                <div class="cb">
+                    <div class="cbt">
+                        <p class="cb_1">我的菜单</p>
+                        <p class="cb_2"><span>10</span>篇菜谱</p>
+                    </div>
+                    <div class="cbb">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="li_1"><p>2019-03-11 16:58</p></li>
+                                    <li class="li_2">
+                                        <img src="images/hua/杰米104270888155.png" class="tang_1">
+                                        <span>杰米10427088815</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/hua/黄金三色蛋5.jpg" class="li_img"/>
+                                <div class="name_t">黄金三色蛋</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/蟹肉煲5.jpg" class="li_img"/>
+                                <div class="name_t">蟹肉煲</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/三色蛋5.jpg" class="li_img"/>
+                                <div class="name_t">三色蛋</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/酥脆金针菇5.jpg" class="li_img"/>
+                                <div class="name_t">酥脆金针菇</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/酸辣土豆丝5.jpg" class="li_img"/>
+                                <div class="name_t">酸辣土豆丝</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="c_t">
+                <div class="cb">
+                    <div class="cbt">
+                        <p class="cb_1">荤菜</p>
+                        <p class="cb_2"><span>12</span>篇菜谱</p>
+                    </div>
+                    <div class="cbb">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="li_1"><p>2019-11-11 16:04</p></li>
+                                    <li class="li_2">
+                                        <img src="images/hua/阿夏朵心雨6.jpg" class="tang_1">
+                                        <span>阿夏朵心雨</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/hua/辣子鱼块6.jpg" class="li_img"/>
+                                <div class="name_t">辣子鱼块</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/干锅香辣鱼6.jpg" class="li_img"/>
+                                <div class="name_t">干锅香辣鱼</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/蒜泥白肉6.jpg" class="li_img"/>
+                                <div class="name_t">蒜泥白肉</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/农家小炒肉6.jpg" class="li_img"/>
+                                <div class="name_t">农家小炒肉</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/烤鲫鱼6.jpg" class="li_img"/>
+                                <div class="name_t">烤鲫鱼</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="c_t">
+                <div class="cb">
+                    <div class="cbt">
+                        <p class="cb_1">我的菜单</p>
+                        <p class="cb_2"><span>10</span>篇菜谱</p>
+                    </div>
+                    <div class="cbb">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="li_1"><p>2019-11-26 11:51</p></li>
+                                    <li class="li_2">
+                                        <img src="images/hua/杰米92735178127.png" class="tang_1">
+                                        <span>杰米92735178127</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/hua/香蕉派宝宝健康食谱7.jpg" class="li_img"/>
+                                <div class="name_t">香蕉派宝宝健康食谱</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/薯片7.jpg" class="li_img"/>
+                                <div class="name_t">薯片</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/快手早餐饼7.jpg" class="li_img"/>
+                                <div class="name_t">快手早餐饼</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/面条新吃法7.jpg" class="li_img"/>
+                                <div class="name_t">面条新吃法</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/芝士烤馒头7.jpg" class="li_img"/>
+                                <div class="name_t">芝士烤馒头</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="c_t">
+                <div class="cb">
+                    <div class="cbt">
+                        <p class="cb_1">我的菜单</p>
+                        <p class="cb_2"><span>10</span>篇菜谱</p>
+                    </div>
+                    <div class="cbb">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="li_1"><p>2017-01-06 21:51</p></li>
+                                    <li class="li_2">
+                                        <img src="images/hua/蘇Sir.png" class="tang_1">
+                                        <span>蘇Sir</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/hua/小炒扇贝丁8.jpg" class="li_img"/>
+                                <div class="name_t">小炒扇贝丁</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/赛螃蟹8.gif" class="li_img"/>
+                                <div class="name_t">赛螃蟹</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/金汤肥牛8.jpg "class="li_img"/>
+                                <div class="name_t">金汤肥牛</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/蜜汁叉烧肉8.jpg" class="li_img"/>
+                                <div class="name_t">蜜汁叉烧肉</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/红枣糕8.jpg" class="li_img"/>
+                                <div class="name_t">红枣糕</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="c_t">
+                <div class="cb">
+                    <div class="cbt">
+                        <p class="cb_1">我的菜单</p>
+                        <p class="cb_2"><span>11</span>篇菜谱</p>
+                    </div>
+                    <div class="cbb">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="li_1"><p>2017-11-26 21:18</p></li>
+                                    <li class="li_2">
+                                        <img src="images/hua/炮炮夫人手作坊9.png" class="tang_1">
+                                        <span>炮炮夫人手作坊</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/hua/南瓜发糕9.jpg" class="li_img"/>
+                                <div class="name_t">南瓜发糕</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/南瓜馒头9.jpg" class="li_img"/>
+                                <div class="name_t">南瓜馒头</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/南瓜饼9.jpg" class="li_img"/>
+                                <div class="name_t">南瓜饼</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/南瓜饼9.2.jpg" class="li_img"/>
+                                <div class="name_t">南瓜饼</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/虎皮鸡蛋9.jpg" class="li_img"/>
+                                <div class="name_t">虎皮鸡蛋</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="c_t">
+                <div class="cb">
+                    <div class="cbt">
+                        <p class="cb_1">我的菜单</p>
+                        <p class="cb_2"><span>10</span>篇菜谱</p>
+                    </div>
+                    <div class="cbb">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="li_1"><p>2018-06-26 11:18</p></li>
+                                    <li class="li_2">
+                                        <img src="images/hua/杰米1401918110.png" class="tang_1">
+                                        <span>杰米1401918110</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/hua/照烧鸡腿10.jpg" class="li_img"/>
+                                <div class="name_t">照烧鸡腿</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/蚝油生菜10.jpg" class="li_img"/>
+                                <div class="name_t">蚝油生菜</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/红焖猪蹄10.jpg" class="li_img"/>
+                                <div class="name_t">红焖猪蹄</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/烧烤豆腐10.jpg" class="li_img"/>
+                                <div class="name_t">烧烤豆腐</div>
+                            </li>
+                            <li>
+                                <img src="images/hua/菌菇汤10.jpg" class="li_img"/>
+                                <div class="name_t">菌菇汤</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="listtyle1_page">
+                <div class="listtyle1_page_w">
+                    <a href="" class="current">1</a>
+                    <a href="" class="">2</a>
+                    <a href="" class="">3</a>
+                    <a href="" class="">4</a>
+                    <a href="" class="">5</a>
+                    <span>...</span>
+                    <a href="" class="next">下一页</a>
+
+                                  <span class="gopage">
+                                    <form action="">
+                                        <input type="hidden" value="13" name="lm">共236819页，到第
+                                        <input type="text" class="text" value="2" name="page"> 页
+                                        <input type="submit" class="submit" value="确定">
+                                    </form>
+                            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="BM">
+    <div class="bottom">
+        <div class="bot_f">
+            <div class="bot_f1" >
+                <a href="lin.html"><img src="images/wan/bottom/logo1.png"></a>
+            </div>
+            <div class="bot_f2">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="images/wan/bottom/weibo.png">
+                            <a class="iig"><span>关注：49万</span></a>
+                        </div>
+                        <a target="_blank" href="https://e.weibo.com/meishij" class="bot_fa">
+                            <span>点击进入<br>美食杰官方微博</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/wan/bottom/QQkongjian.png">
+                            <a class="iig"><span>关注：10.9万</span></a>
+                        </div>
+                        <a  target="_blank" href="https://user.qzone.qq.com/613171717" class="bot_fa">
+                            <span>点击进入<br>美食杰QQ空间</span>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/wan/bottom/add.png">
+                        <br>
+                        <a target="_blank" href="https://sj.meishi.cc/" class="bot_fa">
+                            <span>扫描二维码添加<br>美食杰为微信好友</span>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/wan/bottom/down.png">
+                        <br>
+                        <a target="_blank" href="https://sj.meishi.cc/" class="bot_fa">
+                            <span>扫描二维码下载<br>美食杰手机客户端</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bot_s">
+            <dl>
+                <dt>友情连接</dt>
+                <br/>
+                <dd><a target="_blank" href="http://www.meishij.net" title="美食">美食</a></dd>
+                <dd><a target="_blank" href="http://tizhi.meishi.cc" title="体质测试">体质测试</a></dd>
+                <dd><a target="_blank" href="http://sj.meishi.cc/app.php?to=guanjia" title="伊特">伊特</a></dd>
+                <dd><a target="_blank" href="http://www.9ku.com/ " title="9酷音乐网">9酷音乐网</a></dd>
+                <dd><a target="_blank" href="http://www.yue365.com" title="365音乐网">365音乐网</a></dd>
+                <dd><a target="_blank" href="http://www.mapbar.com/" title="图吧">图吧</a></dd>
+                <dd><a target="_blank" href="http://baa.bitauto.com/" title="汽车论坛">汽车论坛</a></dd>
+                <dd><a target="_blank" href="http://food.39.net" title="39健康饮食">39健康饮食</a></dd>
+                <dd><a target="_blank" href="http://www.qqtn.com/ " title="QQ下载 ">QQ下载</a></dd>
+                <dd><a target="_blank" href="http://www.meilele.com/" title="家具网">家具网</a></dd>
+                <br/>
+                <dd><a target="_blank" href="http://chihe.sohu.com" title="搜狐美食">搜狐美食</a></dd>
+                <dd><a target="_blank" href="http://www.meishichina.com" title="美食天下">美食天下</a></dd>
+                <dd><a target="_blank" href="http://www.zhms.cn" title="中华美食网">中华美食网</a></dd>
+                <dd><a target="_blank" href="http://hefei.8684.cn/" title="合肥公交网">合肥公交网</a></dd>
+                <dd><a target="_blank" href="http://www.canyin88.com/" title="红餐微杂志">红餐微杂志</a></dd>
+                <dd><a target="_blank" href="http://bj.fang.com" title="北京搜房网">北京搜房网</a></dd>
+                <!--<dd><a target="_blank" href="https://www.meishij.net/siteinfo/links.php" title="更多友情链接">更多友情链接</a></dd>-->
+            </dl>
+        </div>
+        <div class="bot_t">
+            <ul class="bot_t1">
+                <li><a>公司简介</a></li>
+                <li><a>关于我们</a></li>
+                <li><a>产品下载</a></li>
+                <li><a>加入我们</a></li>
+                <li><a>联系我们</a></li>
+                <li><a>商务合作</a></li>
+                <li><a>用户协议</a></li>
+                <li><a>隐私政策</a></li>
+                <li><a>网站地图</a></li>
+                <!-- <li><a>友情链接</a></li>-->
+            </ul>
+            <ul class="bot_t2">
+                <li>
+                    <p><a target="_blank" href="https://www.miibeian.gov.cn">京ICP备14030359号</a>/<a target="_blank" href="https://beian.gov.cn/"><img src="images/wan/bottom/gongan.png" >京公网安备11010802026928</a>Copyright © 2003-2019 MEISHIJ CO.,LTD.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>

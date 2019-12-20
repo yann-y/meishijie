@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>美食杰</title>
+    <link href="flug/font-awesome-4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/cai.css"/>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script src="js/cwl_1.js"></script>
+    <script src="js/cwl_2.js"></script>
+    <script src="js/cwl_3.js"></script>
+</head>
+<body>
+<div class="HD">
+    <div class="header">
+        <div class="header_log">
+            <img src="images/wan/header/meishijie.png" >
+        </div>
+        <form  class="header_txt">
+            <input type="text" class="text" value="请输入菜谱/食材/菜单/作者" id="first">
+            <input type="submit" class="submit" value="搜 索" id="second">
+        </form>
+        <div class="header_deng">
+            <ul class="deng_1">
+                <li><img src="images/wan/header/kw.gif" class="img1"><a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=100233147&redirect_uri=http://i.meishi.cc/connect/callback.php?site=qq&state=bd1747373fd6496b77d39ae5d609bc11&scope=get_user_info,add_share,list_album,add_album,upload_pic,add_topic,add_one_blog,add_weibo,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idolist,add_idol,del_idol,get_tenpay_addr" >QQ登陆</a></li>
+                <li><img src="images/wan/header/kw.gif" class="img2"><a href="">微博登陆</a></li>
+            </ul>
+            <ul class="deng_2">
+                <li><a>登陆</a></li>
+                <li><a>注册</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="DH">
+    <div class="daohang">
+        <ul>
+            <li class="daohang_hr"><a class="dh_a" target="_blank" href="lin.html"><strong class="cwl">首页</strong></a>
+            </li>
+            <li><a class="dh_a" target="_blank" href="ling.html"><strong>菜谱大全</strong><img src="images/wan/daohang/blus.gif" class="blus"></a>
+                <div class="MS CO">
+                    <div class="menus">
+                        <div class="homely">
+                            <dl><a>家常菜谱</a></dl>
+                            <dt><a>家常菜</a></dt>
+                            <dt><a>凉菜</a></dt>
+                            <dt><a>素食</a></dt>
+                            <dt><a>晚餐</a></dt>
+                            <dt><a>私藏菜</a></dt>
+                            <dt><a>热菜</a></dt>
+                            <dt><a>海鲜</a></dt>
+                            <dt><a>孕妇</a></dt>
+                            <dt><a>早餐</a></dt>
+                            <dt><a>午餐</a></dt>
+                            <dt><a>甜品点心</a></dt>
+                            <dt><a>汤粥</a></dt>
+                            <dt><a>宝宝食谱-婴儿食谱</a></dt>
+                            <dt><a>糕点主食</a></dt>
+                            <dt><a>微波炉</a></dt>
+                        </div>
+                        <div class="menu">
+                            <dl><a>中华菜系</a></dl>
+                            <dt><a>川菜</a></dt>
+                            <dt><a>粤菜</a></dt>
+                            <dt><a>东北菜</a></dt>
+                            <dt><a>湘菜</a></dt>
+                            <dt><a>鲁菜</a></dt>
+                            <dt><a>浙菜</a></dt>
+                            <dt><a>湖北菜</a></dt>
+                            <dt><a>清蒸菜</a></dt>
+                        </div>
+                        <div class="menu">
+                            <dl><a>各地小吃</a></dl>
+                            <dt><a>四川小吃</a></dt>
+                            <dt><a>广东小吃</a></dt>
+                            <dt><a>北京小吃</a></dt>
+                            <dt><a>陕西小吃</a></dt>
+                        </div>
+                        <br/>
+                        <div class="menu">
+                            <dl><a>外国菜谱</a></dl>
+                            <dt><a>韩国料理</a></dt>
+                            <dt><a>日本料理</a></dt>
+                            <dt><a>法国菜</a></dt>
+                            <dt><a>意大利餐</a></dt>
+                        </div>
+                        <div class="menu">
+                            <dl><a>烘培</a></dl>
+                            <dt><a>蛋糕面包</a></dt>
+                            <dt><a>饼干配方</a></dt>
+                            <dt><a>甜品点心</a></dt>
+                        </div>
+                        <br/>
+                        <div class="menu">
+                            <dl><a>厨房百科</a></dl>
+                            <dt><a>摆盘围边</a></dt>
+                            <dt><a>烹饪技巧</a></dt>
+                            <dt><a>生活妙招</a></dt>
+                            <dt><a>美食专题</a></dt>
+                        </div>
+                        <div class="menu">
+                            <dl><a>食材百科</a></dl>
+                            <dt><a>蔬菜</a></dt>
+                            <dt><a>水果</a></dt>
+                            <dt><a>谷类</a></dt>
+                        </div>
+                    </div>
+                    <img src="images/wan/daohang/pangxie.png">
+             </div>
+            </li>
+            <li><a class="dh_a" target="_blank" href="zhen.html"><strong>饮食健康</strong><img src="images/wan/daohang/blus.gif" class="blus"></a>
+                <div class="FH CO">
+                    <div class="foods">
+                        <div class="health">
+                            <dl><a>饮食健康</a></dl>
+                            <dt><a>饮食小常识</a></dt>
+                            <dt><a>美容瘦身</a></dt>
+                            <dt><a>食品安全</a></dt>
+                            <dt><a>养生妙方</a></dt>
+                            <dt><a>饮食禁忌</a></dt>
+                            <dt><a>中医保健</a></dt>
+                            <dt><a>母婴健康饮食</a></dt>
+                            <dt><a>饮食新闻</a></dt>
+                        </div>
+                        <div class="health">
+                            <dl><a>功能性调理</a></dl>
+                            <dt><a>清热去火</a></dt>
+                            <dt><a>减肥</a></dt>
+                            <dt><a>祛痰</a></dt>
+                            <dt><a>乌发</a></dt>
+                            <dt><a>滋阴补肾</a></dt>
+                            <dt><a>健脾开胃</a></dt>
+                            <dt><a>消化不良</a></dt>
+                            <dt><a>清热解毒</a></dt>
+                            <dt><a>补阳壮阳</a></dt>
+                            <dt><a>增肥</a></dt>
+                        </div>
+                        <div class="health">
+                            <div class="health_f">
+                                <dl><a>人群膳食</a></dl>
+                                <dt><a>孕妇</a></dt>
+                                <dt><a>老人</a></dt>
+                                <dt><a>产妇</a><dt>
+                                <dt><a>哺乳期</a></dt>
+                                <dt><a>青少年</a></dt>
+                                <dt><a>幼儿</a></dt>
+                                <dt><a>学龄期儿童</a><dt>
+                            </div>
+                            <div class="health_f">
+                                <dl><a>疾病调理</a></dl>
+                                <dt><a>糖尿病</a></dt>
+                                <dt><a>高血压</a></dt>
+                                <dt><a>痛风</a></dt>
+                                <dt><a>胃炎</a></dt>
+                                <dt><a>痔疮</a></dt>
+                                <dt><a>更年期</a></dt>
+                                <dt><a>甲状腺</a></dt>
+                            </div>
+                        </div>
+                        <div class="health">
+                            <dl><a>脏腑调理</a></dl>
+                            <dt><a>补肾</a></dt>
+                            <dt><a>阳痿早泄</a></dt>
+                            <dt><a>补血</a></dt>
+                            <dt><a>便秘</a></dt>
+                            <dt><a>腹泻</a></dt>
+                            <dt><a>活血化瘀</a></dt>
+                        </div>
+                    </div>
+                    <img src="images/wan/daohang/shucai.png">
+                </div>
+            </li>
+            <li><a class="dh_a" target="_blank" href="tang.html"><strong>美食菜单</strong></a></li>
+            <li><a class="dh_a"><strong>家居馆</strong></a></li>
+            <li class="daohang_md"><a class="dh_a" target="_blank" href="yi.html"><strong>美食达人</strong><img src="images/wan/daohang/huangguan.png" ></a></li>
+            <li><a class="dh_a"><strong>菜谱视频</strong></a></li>
+            <li><a class="dh_a"><strong>产品下载</strong></a></li>
+        </ul>
+    </div>
+</div>
+<div class="CT">
+    <div class="content">
+        <div class="kong">
+
+        </div>
+        <div class="content_c1">
+            <div class="ctime1">
+                <!--4点到10点-->
+                <div class="time_1" style="display: block">
+                    <ul>
+                        <li>
+                            <a><img alt="青椒紫茄酱肉包" src="images/wan/lunbo1/4.1.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/qingjiaoziqiejiangroubao.html" title="青椒紫茄酱肉包">青椒紫茄酱肉包</a></h2>
+                                <p><strong>营养丰富，早餐最爱</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img alt="冰糖雪梨糖水" src="images/wan/lunbo1/4.2.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/bingtangxuelitangshui_1.html" title="冰糖雪梨糖水">冰糖雪梨糖水</a></h2>
+                                <p><strong>美味可口，营养丰富</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img alt="番茄焗蛋" src="images/wan/lunbo1/4.3.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/fanqiejudan_1.html" title="番茄焗蛋">番茄焗蛋</a></h2>
+                                <p><strong>美味营养，吃完元气满满</strong></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--10点到14点-->
+                <div class="time_1"  style="display:none">
+                    <ul>
+                        <li>
+                            <a><img alt="葱爆羊肉" src="images/wan/lunbo1/10.1.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/congbaoyangrou_54.html" title="葱爆羊肉">葱爆羊肉</a></h2>
+                                <p><strong>色香味俱佳，惊艳味蕾</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img alt="菠萝咕噜肉" src="images/wan/lunbo1/10.2.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/boluogulurou_11.html" title="菠萝咕噜肉">菠萝咕噜肉</a></h2>
+                                <p><strong>经济实惠，有滋有味</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img alt="饭店超级下饭大众菜熘酱豆腐" src="images/wan/lunbo1/10.3.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/fandianchaojixiafandazhongcailiujiangdoufu.html" title="饭店超级下饭大众菜熘酱豆腐">饭店超级下饭大众菜熘酱豆腐</a></h2>
+                                <p><strong>营养美味，一吃停不下来</strong></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--14点到16点-->
+                <div class="time_1">
+                    <ul>
+                        <li>
+                            <a><img alt="芝麻香酥点心" src="images/wan/lunbo1/14.1.jpg"/></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/zhimaxiangsudianxin.html" title="芝麻香酥点心">芝麻香酥点心</a></h2>
+                                <p><strong>香气扑鼻，好吃过瘾</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img alt="酥脆五香炸薯片" src="images/wan/lunbo1/14.2.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/sucuiwuxiangzhashupian.html" title="酥脆五香炸薯片">酥脆五香炸薯片</a></h2>
+                                <p> <strong>无比美味，吃一口就爱上</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img alt="老婆饼" src="images/wan/lunbo1/14.3.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/laopobing_53.html" title="老婆饼">老婆饼</a></h2>
+                                <p><strong>惊艳味蕾，好吃到爆</strong></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--16点到21点-->
+                <div class="time_1">
+                    <ul>
+                        <li>
+                            <a><img alt="炸酱面" src="images/wan/lunbo1/16.1.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/zhajiangmian_144.html" title="炸酱面">炸酱面</a></h2>
+                                <p><strong>家常经典，上桌被抢光</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img alt="香菇菜蒸排骨" src="images/wan/lunbo1/16.2.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/xianggucaizhengpaigu.html" title="香菇菜蒸排骨">香菇菜蒸排骨</a></h2>
+                                <p><strong>香味浓郁，让人食欲大增</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img alt="清炒空心菜" src="images/wan/lunbo1/16.3.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/qingchaokongxincai_12.html" title="清炒空心菜">清炒空心菜</a></h2>
+                                <p><strong>味道鲜美，瞬间打开胃口</strong></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--21点到4点-->
+                <div class="time_1">
+                    <ul>
+                        <li>
+                            <a><img alt="自制土家酱香饼" src="images/wan/lunbo1/21.1.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/zizhitujiajiangxiangbing.html" title="自制土家酱香饼">自制土家酱香饼</a></h2>
+                                <p><strong>均衡营养，滋补养生</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img alt="简易版陕西油泼面" src="images/wan/lunbo1/21.2.jpg" /></a>
+                            <div>
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/jianyibanshanxiyoupomian.html" title="简易版陕西油泼面">简易版陕西油泼面</a></h2>
+                                <p><strong>美味过瘾，好吃停不下嘴</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img alt="陕西麻食" src="images/wan/lunbo1/21.3.jpg" /></a>
+                            <div >
+                                <h2><a target="_blank" href="https://www.meishij.net/zuofa/shanximashi_2.html" title="陕西麻食">陕西麻食</a></h2>
+                                <p><strong>激发味蕾，好吃到舔手指</strong></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+              <!--  <div class="kong1">
+                    <img src="images/wan/lunbo1/4.2.jpg">
+                    <div>
+                        <h2><a target="_blank" href="https://www.meishij.net/zuofa/bingtangxuelitangshui_1.html" title="冰糖雪梨糖水">冰糖雪梨糖水</a></h2>
+                        <p><strong>美味可口，营养丰富</strong></p>
+                    </div>
+                </div>
+                <div class="kong11">
+                    <img src="images/wan/lunbo1/21.2.jpg">
+                    <div>
+                        <h2><a target="_blank" href="https://www.meishij.net/zuofa/jianyibanshanxiyoupomian.html" title="简易版陕西油泼面">简易版陕西油泼面</a></h2>
+                        <p><strong>美味过瘾，好吃停不下嘴</strong></p>
+                    </div>
+                </div>-->
+            </div>
+            <div class="ctime2">
+                <div class="time_2" onmouseover="change1(this,0)">早餐时间</div>
+                <div class="time_2" onmouseover="change1(this,1)">午餐时间</div>
+                <div class="time_2" onmouseover="change1(this,2)">下午茶时间</div>
+                <div class="time_2" onmouseover="change1(this,3)">晚餐时间</div>
+                <div class="time_2" onmouseover="change1(this,4)">夜宵时间</div>
+                <!--<div class="kong2"></div>
+                <div class="kong22"></div>-->
+            </div>
+           <!-- <div class="kong3">
+            </div>
+            <div class="kong4">
+            </div>-->
+        </div>
+        <div class="content_c2">
+                <div class="food_material1">
+                    <div><p>十二月，滋阴润肺，适当进补</p></div>
+                    <div class="more"><a>更多食材&nbsp&gt</a></div>
+                </div>
+                <div class="food_material2">
+                    <div class="food_up">
+                        <ul>
+                            <li class="food_u"><a href="">水果</a></li>
+                            <li class="food_u"><a href="">蔬菜</a></li>
+                            <li class="food_u"><a href="">五谷</a></li>
+                            <li class="food_u"><a href="">生鲜</a></li>
+                        </ul>
+                    </div>
+                    <div class="food_down">
+                        <div class="food_d" style="display: block">
+                            <ul>
+                                <li class="down1">
+                                    <img src="images/wan/food/fruit/fruit1.jpg">
+                                    <ul >
+                                        <li style="list-style-type:square"><a>梨</a></li>
+                                    </ul>
+                                </li>
+                                <li class="down1">
+                                    <img src="images/wan/food/fruit/fruit2.jpg">
+                                    <ul type="square">
+                                        <li style="list-style-type:square"><a>山楂</a></li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fruit/fruit3.jpg">
+                                    <ul type="square">
+                                        <li style="list-style-type:square"><a>橙</a></li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fruit/fruit4.jpg">
+                                    <ul type="square">
+                                        <li><a>苹果</a></li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fruit/fruit5.jpg">
+                                    <ul type="square">
+                                        <li>猕猴桃</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fruit/fruit6.jpg">
+                                    <ul type="square">
+                                        <li>甘蔗</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fruit/fruit7.jpg">
+                                    <ul type="square">
+                                        <li>香蕉</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fruit/fruit8.jpg">
+                                    <ul type="square">
+                                        <li>柚子</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="food_d">
+                            <ul>
+                                <li class="down1"><img src="images/wan/food/vegetables/vegetable1.jpg">
+                                    <ul style="list-style-type:square">
+                                        <li>冬笋</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/vegetables/vegetable2.jpg">
+                                    <ul type="square">
+                                        <li>芹菜</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/vegetables/vegetable3.jpg">
+                                    <ul type="square">
+                                        <li>胡萝卜</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/vegetables/vegetable4.jpg">
+                                    <ul type="square">
+                                        <li>大白菜</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/vegetables/vegetable5.jpg">
+                                    <ul type="square">
+                                        <li>莴笋</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/vegetables/vegetable6.jpg">
+                                    <ul type="square">
+                                        <li>菜花</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/vegetables/vegetable7.jpg">
+                                    <ul type="square">
+                                        <li>油麦菜</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/vegetables/vegetable8.jpg">
+                                    <ul type="square">
+                                        <li>平菇</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="food_d">
+                            <ul>
+                                <li class="down1"><img src="images/wan/food/rice/rice1.jpg">
+                                    <ul style="list-style-type:square">
+                                        <li>板栗</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/rice/rice2.jpg">
+                                    <ul type="square">
+                                        <li>黑豆</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/rice/rice3.jpg">
+                                    <ul type="square">
+                                        <li>核桃</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/rice/rice4.jpg">
+                                    <ul type="square">
+                                        <li>小米</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/rice/rice5.jpg">
+                                    <ul type="square">
+                                        <li>燕麦</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/rice/rice6.jpg">
+                                    <ul type="square">
+                                        <li>糯米</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/rice/rice7.jpg">
+                                    <ul type="square">
+                                        <li>干桂圆</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/rice/rice8.jpg">
+                                    <ul type="square">
+                                        <li>玉米粉</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="food_d">
+                            <ul>
+                                <li class="down1"><img src="images/wan/food/fresh/fresh1.jpg">
+                                    <ul style="list-style-type:square">
+                                        <li>排骨</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fresh/fresh2.jpg">
+                                    <ul type="square">
+                                        <li>虾</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fresh/fresh3.jpg">
+                                    <ul type="square">
+                                        <li>羊肉</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fresh/fresh4.jpg">
+                                    <ul type="square">
+                                        <li>带鱼</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fresh/fresh5.jpg">
+                                    <ul type="square">
+                                        <li>牛肉</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fresh/fresh6.jpg">
+                                    <ul type="square">
+                                        <li>鱿鱼</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fresh/fresh7.jpg">
+                                    <ul type="square">
+                                        <li>乌骨鸡</li>
+                                    </ul>
+                                </li>
+                                <li class="down1"><img src="images/wan/food/fresh/fresh8.jpg">
+                                    <ul type="square">
+                                        <li>腊肉</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="content_c3">
+            <div class="content_1">
+                <div class="cookbook" style="display: block">
+                    <div class="book1">
+                        <div class="cook1"><p>最新菜谱</p></div>
+                    </div>
+                    <div class="book2">
+                        <ul>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/newest/newest1.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">肉末茄子</a></p>
+                                        <p class="p2"><a href="">1评论4人气</a></p>
+                                        <p class="p3"><a href="">多味小厨房</a></p>
+                                    </div>
+                                    <div class="cook222" style="display: none">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">9步 / 大概15分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">炒 / 家常味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/newest/newest2.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">孜然大虾</a></p>
+                                        <p class="p2"><a href="">5评论18人气</a></p>
+                                        <p class="p3"><a href="">爱生活的馋猫vip</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">9步 / 大概30分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">烤 / 家常味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/newest/newest3.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">鸡蛋时蔬三明治</a></p>
+                                        <p class="p2"><a href="">8评论42人气</a></p>
+                                        <p class="p3"><a href="">踏月色而来&sim;</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">8步 / 大概20分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">烙 / 其他味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/newest/newest4.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display:block">
+                                        <p class="p1"><a href="">芝麻粉年糕</a></p>
+                                        <p class="p2"><a href="">8评论267人气</a></p>
+                                        <p class="p3"><a href="">花鱼儿</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">6步 / 大概30分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">煮 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/newest/newest5.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display:block">
+                                        <p class="p1"><a href="">番茄块大虾</a></p>
+                                        <p class="p2"><a href="">6评论20人气</a></p>
+                                        <p class="p3"><a href="">偶然遇见你！</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">11步 / 大概30分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">炖 / 家常味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/newest/newest6.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">小米戚风</a></p>
+                                        <p class="p2"><a href="">6评论34人气</a></p>
+                                        <p class="p3"><a href="">梅记</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">12步 / 大概10分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">烘培 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/newest/newest7.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">蓝莓酸奶木糠杯</a></p>
+                                        <p class="p2"><a href="">3评论395人气</a></p>
+                                        <p class="p3"><a href="">丹霞4662</a></p>
+                                    </div>
+                                    <div class="cook222" style="display: none">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">12步 / 大概18分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">其他工艺 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook23">热门栏目推荐</div>
+                                <div class="cook24">
+                                    <ul>
+                                        <li><a href="">最新菜谱</a></li>
+                                        <li><a href="">家常菜</a></li>
+                                        <li><a href="">凉菜</a></li>
+                                        <li><a href="">素食</a></li>
+                                        <li><a href="">早餐</a></li>
+                                        <li><a href="">乌发</a></li>
+                                        <li><a href="">高血压</a></li>
+                                        <li><a href="">烘培</a></li>
+                                        <li><a href="">韩国料理</a></li>
+                                        <li><a href="">川菜</a></li>
+                                        <li><a href="">早餐</a></li>
+                                        <li><a href="">粤菜</a></li>
+                                        <li><a href="">湘菜</a></li>
+                                        <li><a href="">甜点</a></li>
+                                        <br>
+                                        <li><a href="">进入菜谱大全&nbsp;&gt;&gt;</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cookbook" style="display: none">
+                    <div class="book1">
+                        <div class="cook1"><p>每小时最热门菜谱</p></div>
+                    </div>
+                    <div class="book2">
+                        <ul>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hour/hour1.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">鲜榨西瓜汁</a></p>
+                                        <p class="p2"><a href="">0评论0人气</a></p>
+                                        <p class="p3"><a href="">不愿下楼的猫</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">4步 / 大概5分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">榨汁 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hour/hour2.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">甜酒酿番薯</a></p>
+                                        <p class="p2"><a href="">0评论0人气</a></p>
+                                        <p class="p3"><a href="">花鱼儿</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">8步 / 大概10分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">煮 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hour/hour3.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display:block">
+                                        <p class="p1"><a href="">蓝莓紫薯夹心三明治</a></p>
+                                        <p class="p2"><a href="">0评论0人气</a></p>
+                                        <p class="p3"><a href="">安冉&sim;</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">10步 / 大概30分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">其他工艺 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hour/hour4.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display:block">
+                                        <p class="p1"><a href="">美味土豆炖牛肉</a></p>
+                                        <p class="p2"><a href="">1评论26人气</a></p>
+                                        <p class="p3"><a href="">纪元杰米3511912325</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">6步 / 大概30分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">炖 / 家常味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hour/hour5.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">圆白菜拌素鸡2</a></p>
+                                        <p class="p2"><a href="">0评论3人气</a></p>
+                                        <p class="p3"><a href="">纪元杰米3511912325</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">12步 / 大概10分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">拌 / 酸甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hour/hour6.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">香菇红烧肉</a></p>
+                                        <p class="p2"><a href="">3评论258人气</a></p>
+                                        <p class="p3"><a href="">接吻鱼儿</a></p>
+                                    </div>
+                                    <div class="cook222" style="display: none">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">7步 / 大概90分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">炖 / 家常味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hour/hour7.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">酒酿鸭蛋圆子汤</a></p>
+                                        <p class="p2"><a href="">1评论24人气</a></p>
+                                        <p class="p3"><a href="">萍儿WOYGN</a></p>
+                                    </div>
+                                    <div class="cook222" style="display: none">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">14步 / 大概15分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">煮 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook23">热门栏目推荐</div>
+                                <div class="cook24">
+                                    <ul>
+                                        <li><a href="">最新菜谱</a></li>
+                                        <li><a href="">家常菜</a></li>
+                                        <li><a href="">凉菜</a></li>
+                                        <li><a href="">素食</a></li>
+                                        <li><a href="">早餐</a></li>
+                                        <li><a href="">乌发</a></li>
+                                        <li><a href="">高血压</a></li>
+                                        <li><a href="">烘培</a></li>
+                                        <li><a href="">韩国料理</a></li>
+                                        <li><a href="">川菜</a></li>
+                                        <li><a href="">早餐</a></li>
+                                        <li><a href="">粤菜</a></li>
+                                        <li><a href="">湘菜</a></li>
+                                        <li><a href="">甜点</a></li>
+                                        <br>
+                                        <li><a href="">进入菜谱大全&nbsp;&gt;&gt;</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cookbook" style="display: none">
+                    <div class="book1">
+                        <div class="cook1"><p>今日最受欢迎菜谱</p></div>
+                    </div>
+                    <div class="book2">
+                        <ul>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/today/today1.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">西兰花溜鸡肉条</a></p>
+                                        <p class="p2"><a href="">0评论0人气</a></p>
+                                        <p class="p3"><a href="">踏月色而来&sim;</a></p>
+                                    </div>
+                                    <div class="cook222" style="display: none">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">13步 / 大概10分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">熘 / 家常味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/today/today2.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">自制旺仔小馒头</a></p>
+                                        <p class="p2"><a href="">0评论444人气</a></p>
+                                        <p class="p3"><a href="">寻找米米</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">6步 / 大概30分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">烘培 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/today/today3.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">蓝莓酱香蕉吐司脆</a></p>
+                                        <p class="p2"><a href="">0评论219人气</a></p>
+                                        <p class="p3"><a href="">木木木木de健康生活</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">6步 / 大概15分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">烤 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/today/today4.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display:block">
+                                        <p class="p1"><a href="">油豆腐炒菜籽</a></p>
+                                        <p class="p2"><a href="">1评论0人气</a></p>
+                                        <p class="p3"><a href="">花鱼儿</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">6步 / 大概30分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">蒸 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/today/today5.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display:block">
+                                        <p class="p1"><a href="">蒜苗炒白豆干</a></p>
+                                        <p class="p2"><a href="">1评论0人气</a></p>
+                                        <p class="p3"><a href="">花鱼儿</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">步 / 大概10分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">炒 / 家常味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/today/today6.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">红薯奶酪球</a></p>
+                                        <p class="p2"><a href="">1评论0人气</a></p>
+                                        <p class="p3"><a href="">雪峰儿</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">10步 / 大概10分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">炸 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/today/today7.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">芹菜炒山药</a></p>
+                                        <p class="p2"><a href="">3评论395人气</a></p>
+                                        <p class="p3"><a href="">花鱼儿</a></p>
+                                    </div>
+                                    <div class="cook222" style="display: none">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">9步 / 大概10分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">炒 / 家常味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook23">热门栏目推荐</div>
+                                <div class="cook24">
+                                    <ul>
+                                        <li><a href="">最新菜谱</a></li>
+                                        <li><a href="">家常菜</a></li>
+                                        <li><a href="">凉菜</a></li>
+                                        <li><a href="">素食</a></li>
+                                        <li><a href="">早餐</a></li>
+                                        <li><a href="">乌发</a></li>
+                                        <li><a href="">高血压</a></li>
+                                        <li><a href="">烘培</a></li>
+                                        <li><a href="">韩国料理</a></li>
+                                        <li><a href="">川菜</a></li>
+                                        <li><a href="">早餐</a></li>
+                                        <li><a href="">粤菜</a></li>
+                                        <li><a href="">湘菜</a></li>
+                                        <li><a href="">甜点</a></li>
+                                        <br>
+                                        <li><a href="">进入菜谱大全&nbsp;&gt;&gt;</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cookbook" style="display:none">
+                    <div class="book1">
+                        <div class="cook1"><p>一周热门菜谱推荐</p></div>
+                    </div>
+                    <div class="book2">
+                        <ul>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hebdomad/hebdomad1.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">蒜香烤翅</a></p>
+                                        <p class="p2"><a href="">1评论364人气</a></p>
+                                        <p class="p3"><a href="">爱生活的馋猫vip</a></p>
+                                    </div>
+                                    <div class="cook222" style="display: none">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">9步 / 大概15分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">烘培 / 家常味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hebdomad/hebdomad2.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">清煲沙尖鱼</a></p>
+                                        <p class="p2"><a href="">4评论398人气</a></p>
+                                        <p class="p3"><a href="">爱生活的馋猫vip</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">9步 / 大概30分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">煲 / 家常味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hebdomad/hebdomad3.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">燕麦能量棒</a></p>
+                                        <p class="p2"><a href="">1评论0人气</a></p>
+                                        <p class="p3"><a href="">寓言7656</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">8步 / 大概30分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">烘培 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hebdomad/hebdomad4.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display:block">
+                                        <p class="p1"><a href="">红豆米糕</a></p>
+                                        <p class="p2"><a href="">8评论267人气</a></p>
+                                        <p class="p3"><a href="">美美家的厨房</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">6步 / 大概30分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">蒸 / 甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hebdomad/hebdomad5.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display:block">
+                                        <p class="p1"><a href="">水果热花茶</a></p>
+                                        <p class="p2"><a href="">3评论250人气</a></p>
+                                        <p class="p3"><a href="">踏月色而来</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">11步 / 大概30分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">炖 / 家常味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hebdomad/hebdomad6.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">快手牛肉接麦面&sim;番尼鱼</a></p>
+                                        <p class="p2"><a href="">1评论364人气</a></p>
+                                        <p class="p3"><a href="">踏月色而来</a></p>
+                                    </div>
+                                    <div class="cook222">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">12步 / 大概10分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">泡 / 酸甜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook21"><img src="images/wan/lunbo2/hebdomad/hebdomad7.jpg"></div>
+                                <div class="cook22">
+                                    <div class="cook221" style="display: block">
+                                        <p class="p1"><a href="">牛肉蒜黄饺子</a></p>
+                                        <p class="p2"><a href="">3评论395人气</a></p>
+                                        <p class="p3"><a href="">踏月色而来</a></p>
+                                    </div>
+                                    <div class="cook222" style="display: none">
+                                        <ul>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_11.png">
+                                                <a href="">12步 / 大概10分钟</a></li>
+                                            <li>
+                                                <img src="images/wan/lunbo2/logo_1/log_12.png">
+                                                <a href="">煮 / 咸鲜味</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cook2">
+                                <div class="cook23">热门栏目推荐</div>
+                                <div class="cook24">
+                                    <ul>
+                                        <li><a href="">最新菜谱</a></li>
+                                        <li><a href="">家常菜</a></li>
+                                        <li><a href="">凉菜</a></li>
+                                        <li><a href="">素食</a></li>
+                                        <li><a href="">早餐</a></li>
+                                        <li><a href="">乌发</a></li>
+                                        <li><a href="">高血压</a></li>
+                                        <li><a href="">烘培</a></li>
+                                        <li><a href="">韩国料理</a></li>
+                                        <li><a href="">川菜</a></li>
+                                        <li><a href="">早餐</a></li>
+                                        <li><a href="">粤菜</a></li>
+                                        <li><a href="">湘菜</a></li>
+                                        <li><a href="">甜点</a></li>
+                                        <br>
+                                        <li><a href="">进入菜谱大全&nbsp;&gt;&gt;</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="morethan">
+                <a class="a1" onmouseover="change(this,0)">最新</a>
+                <a>| 最热: </a>
+                <a class="a1" onmouseover="change(this,1)">一小时 </a>
+               <!-- &nbsp;-->
+                <a class="a1" onmouseover="change(this,2)">今日 </a>
+                <!--&nbsp;-->
+                <a class="a1" onmouseover="change(this,3)">七天 </a>
+               <!-- &nbsp;-->
+                <a class="a1_1">更多菜谱&nbsp;&gt;</a>
+            </div>
+            <!--<div class="content_2">
+              <img src="images/wan/lunbo2/logo_1/left_1.png" style="display:block" class="left1">
+              <img src="images/wan/lunbo2/logo_1/left_2.png" class="left2">
+            </div>-->
+            <!--<div class="content_2">
+                <img src="images/wan/lunbo2/logo_1/left_2.png">
+            </div>-->
+           <!-- <div class="content_3">
+                <img src="images/wan/lunbo2/logo_1/right_1.png" style="display: block" class="right1">
+                <img src="images/wan/lunbo2/logo_1/right_2.png" class="right2">
+            </div>-->
+            <!--<div class="content_3">
+                <img src="images/wan/lunbo2/logo_1/right_2.png">
+            </div>-->
+        </div>
+        <div class="content_c4">
+            <div class="healthnews1">
+                <div><p>健康新闻</p></div>
+                <div class="more"><a>更多健康咨询&nbsp;&gt;</a></div>
+            </div>
+            <div class="healthnews2">
+                <div class="ht1">
+                    <div class="c4img">
+                        <img src="images/wan/c4/c41/1.jpg" style="display: block" class="ig1">
+                        <img src="images/wan/c4/c41/2.jpg" class="ig1">
+                        <img src="images/wan/c4/c41/3.jpg" class="ig1">
+                    </div>
+                    <div class="c4name">
+                        <ul>
+                            <li class="li1"><a>《亲爱的客栈3》宁夏风光受捧 百瑞</a></li>
+                            <li class="li1 li2"><a>2020AWE厨房电美食杰 一场热闹而丰盛</a></li>
+                            <li class="li1"><a>王志诚荣膺2019省培露世界青年厨师</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ht1 ht2">
+                    <div class="c4img">
+                        <img src="images/wan/c4/c42/1.jpg" style="display: block" class="ig1">
+                        <img src="images/wan/c4/c42/2.jpg" class="ig1">
+                        <img src="images/wan/c4/c42/3.jpg" class="ig1">
+                    </div>
+                    <div class="c4name">
+                        <ul>
+                            <li class="li1"><a>还未上市就先火 全国首创共享醇酒-贡</a></li>
+                            <li class="li1 li2"><a>南方春节食物的寓意</a></li>
+                            <li class="li1"><a>轻食主义到底是什么呢？</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ht1">
+                    <div class="c4img">
+                        <img src="images/wan/c4/c43/1.jpg" style="display: block" class="ig1">
+                        <img src="images/wan/c4/c43/2.jpg" class="ig1">
+                        <img src="images/wan/c4/c43/3.jpg" class="ig1">
+                    </div>
+                    <div class="c4name">
+                        <ul>
+                            <li class="li1"><a>进口蜂蜜品牌康维他领跑双十一蜂蜜</a></li>
+                            <li class="li1 li2"><a>如何补充叶黄素？叶黄素那个品牌好</a></li>
+                            <li class="li1"><a>懒人营养早餐怎么做？蛋白粉哪个好</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ht1 ht2">
+                    <div class="c4img">
+                        <img src="images/wan/c4/c44/1.jpg" style="display: block" class="ig1">
+                        <img src="images/wan/c4/c44/2.jpg" class="ig1">
+                        <img src="images/wan/c4/c44/3.jpg" class="ig1">
+                    </div>
+                    <div class="c4name">
+                        <ul>
+                            <li class="li1"><a>缺少蛋白质该怎么吃？了解蛋白粉</a></li>
+                            <li class="li1 li2"><a>巅峰对决，第二届中国甜品锦标赛决</a></li>
+                            <li class="li1"><a>老夫妻告诉你茅河定制酒，到底有没</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="BM">
+    <div class="bottom">
+        <div class="bot_f">
+            <div class="bot_f1" >
+                <a href="lin.html"><img src="images/wan/bottom/logo1.png"></a>
+            </div>
+            <div class="bot_f2">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="images/wan/bottom/weibo.png">
+                            <a class="iig"><span>关注：49万</span></a>
+                        </div>
+                        <a target="_blank" href="https://e.weibo.com/meishij" class="bot_fa">
+                            <span>点击进入<br>美食杰官方微博</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/wan/bottom/QQkongjian.png">
+                            <a class="iig"><span>关注：10.9万</span></a>
+                        </div>
+                        <a  target="_blank" href="https://user.qzone.qq.com/613171717" class="bot_fa">
+                            <span>点击进入<br>美食杰QQ空间</span>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/wan/bottom/add.png">
+                        <br>
+                        <a target="_blank" href="https://sj.meishi.cc/" class="bot_fa">
+                            <span>扫描二维码添加<br>美食杰为微信好友</span>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/wan/bottom/down.png">
+                        <br>
+                        <a target="_blank" href="https://sj.meishi.cc/" class="bot_fa">
+                        <span>扫描二维码下载<br>美食杰手机客户端</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bot_s">
+            <dl>
+                <dt>友情连接</dt>
+                <br/>
+                <dd><a target="_blank" href="http://www.meishij.net" title="美食">美食</a></dd>
+                <dd><a target="_blank" href="http://tizhi.meishi.cc" title="体质测试">体质测试</a></dd>
+                <dd><a target="_blank" href="http://sj.meishi.cc/app.php?to=guanjia" title="伊特">伊特</a></dd>
+                <dd><a target="_blank" href="http://www.9ku.com/ " title="9酷音乐网">9酷音乐网</a></dd>
+                <dd><a target="_blank" href="http://www.yue365.com" title="365音乐网">365音乐网</a></dd>
+                <dd><a target="_blank" href="http://www.mapbar.com/" title="图吧">图吧</a></dd>
+                <dd><a target="_blank" href="http://baa.bitauto.com/" title="汽车论坛">汽车论坛</a></dd>
+                <dd><a target="_blank" href="http://food.39.net" title="39健康饮食">39健康饮食</a></dd>
+                <dd><a target="_blank" href="http://www.qqtn.com/ " title="QQ下载 ">QQ下载</a></dd>
+                <dd><a target="_blank" href="http://www.meilele.com/" title="家具网">家具网</a></dd>
+                <br/>
+                <dd><a target="_blank" href="http://chihe.sohu.com" title="搜狐美食">搜狐美食</a></dd>
+                <dd><a target="_blank" href="http://www.meishichina.com" title="美食天下">美食天下</a></dd>
+                <dd><a target="_blank" href="http://www.zhms.cn" title="中华美食网">中华美食网</a></dd>
+                <dd><a target="_blank" href="http://hefei.8684.cn/" title="合肥公交网">合肥公交网</a></dd>
+                <dd><a target="_blank" href="http://www.canyin88.com/" title="红餐微杂志">红餐微杂志</a></dd>
+                <dd><a target="_blank" href="http://bj.fang.com" title="北京搜房网">北京搜房网</a></dd>
+                <!--<dd><a target="_blank" href="https://www.meishij.net/siteinfo/links.php" title="更多友情链接">更多友情链接</a></dd>-->
+            </dl>
+        </div>
+        <div class="bot_t">
+            <ul class="bot_t1">
+                <li><a>公司简介</a></li>
+                <li><a>关于我们</a></li>
+                <li><a>产品下载</a></li>
+                <li><a>加入我们</a></li>
+                <li><a>联系我们</a></li>
+                <li><a>商务合作</a></li>
+                <li><a>用户协议</a></li>
+                <li><a>隐私政策</a></li>
+                <li><a>网站地图</a></li>
+               <!-- <li><a>友情链接</a></li>-->
+            </ul>
+            <ul class="bot_t2">
+                <li>
+                    <p><a target="_blank" href="https://www.miibeian.gov.cn">京ICP备14030359号</a>/<a target="_blank" href="https://beian.gov.cn/"><img src="images/wan/bottom/gongan.png" >京公网安备11010802026928</a>Copyright © 2003-2019 MEISHIJ CO.,LTD.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+@charset "utf-8";
+.CT{
+    width: 100%;
+    height:1800px;
+    background-color: bisque;
+}
+.CT1{
+    height: 1800px;
+    background-color: bisque;
+}
+.one{
+    height: 50px;
+    font-size: 25px;
+    margin-top: 0px;
+    text-align: center;
+
+}
+.one a{
+    color:black;
+    text-align: center;
+    font-size: 26px;
+    text-decoration: none;
+}
+.one a:hover{
+    text-decoration: underline;
+}
+
+
+
+.top{
+
+    height: 43px;
+    background-color:antiquewhite;
+    padding-left: 0px;
+    margin-top: 45px;
+    margin-left: 13.8%;
+    width:73%;
+/*    border: 1px solid black;*/
+}
+.top li {
+    line-height: 50px;
+    height: 43px;
+    float: left;
+    margin-left: -10px;
+    overflow: hidden;
+    font-size: 14px;
+    margin-top: -1px;
+
+}
+.top li {
+    background-color: antiquewhite;
+}
+.top a{
+    border:50px solid antiquewhite;
+    color: black;
+    text-decoration:none;
+    font-weight: bold;
+}
+.top a:hover{
+    border:50px solid white;
+    color: red;
+    background-color: white;
+}
+
+.baise{
+    background-color: white;
+    width:73% ;
+    height:200px;
+    margin-left:13%;
+    /*
+    border: solid 1px red;
+    */
+
+}
+.baise dt{
+    background-color: white;
+
+}
+.baise dd{
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+.yingshi{
+    background-color: white;
+    border: 1px solid gainsboro;
+    width:250px;
+    height: 90px;
+
+}
+.yingshi dt{
+    margin-top: 10px;
+    font-size:24px;
+    padding-left:20px;
+    text-align: left;
+}
+.yingshi dd{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+.wenhua{
+    background-color: white;
+    border: 1px solid gainsboro;
+    width: 510px;
+    height: 90px;
+    margin-left: 252px;
+    margin-top: -92px;
+
+}
+.wenhua dt{
+    margin-top: 10px;
+    font-size:24px;
+    padding-left:20px;
+    text-align: left;
+}
+.wenhua dd{
+
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.zhuanqu {
+    background-color: white;
+    border: 1px solid gainsboro;
+    height: 90px;
+    width: 234px;
+    margin-left: 764px;
+    margin-top: -92px;
+
+}
+.zhuanqu dt{
+    margin-top: 10px;
+    font-size:24px;
+    padding-left:20px;
+    text-align: left;
+}
+.zhuanqu dd{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.jiankang
+{
+    background-color: white;
+    border: 1px solid gainsboro;
+    height: 106px;
+    width: 998px;
+
+}
+
+.jiankang dt{
+    margin-top: 10px;
+    font-size:24px;
+    padding-left:20px;
+    text-align: left;
+}
+
+.jiankang dd{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.baise a{
+    color: black;
+    text-decoration:none;
+}
+.baise a:hover{
+    border: 3px solid red;
+    color: white;
+    background-color: red;
+}
+
+
+
+
+
+.he{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.tu{
+    float: left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.i_bg{
+    width:100%;
+    min-width: 1200px;
+    overflow: hidden;
+}
+
+/*商品列表*/
+.l_list{
+    height: 1300px;
+    width: 120%;
+    min-width: 120px;
+    overflow: hidden;
+   /*border: 1px solid red;*/
+    margin-left: -75px;
+
+}
+
+
+.l_list .cate_list{
+    padding: 5px 0;
+  /*  border: 1px solid blue;*/
+}
+.l_list ul{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+  /*  border: 1px solid blue;*/
+}
+.l_list ul  li{
+    float:left;
+    width:232px;
+    height:340px;
+    margin-left: 20px;
+    padding: 0;
+    margin-right: 20px;
+    margin-top:45px;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+   /* box-shadow: 0px 0px 20px;*//*盒子阴影*/
+    /*overflow: hidden;*//*scroll:滚动条  ,auto:自动，visible:默认 hidden:隐藏*/
+    /*border-style: solid;border-color: orange;*/
+}
+
+.l_list ul  li .img img{
+    background-color: white;
+    width:222px;
+    height:232px;
+    margin-bottom:0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.l_list ul  li .ren{
+    background-color: white;
+    height: 20px;
+    font-size:6px;
+    color: darkgray;
+    text-align: left;
+    margin:5px 4px;
+    overflow: hidden;
+   /* border-style: solid;  border-color: darkmagenta;*/
+
+}
+.l_list ul  li .name{
+
+    font-weight: bold;
+    margin-top:10px;
+    margin-bottom: 0px;
+    background-color: white;
+    overflow: hidden;
+  /*  border-style: solid;border-color: aquamarine;*/
+}
+.l_list ul  li .name a{
+    background-color: white;
+    font-size: 14px;
+    text-decoration: none;
+ color: black;
+    overflow: hidden;
+
+}
+.l_list ul  li .name a:hover{
+    text-decoration:underline;
+    overflow: hidden;
+}
+
+
+
+/*排序部分*/
+/*.list_t{
+    height: 39px;
+    line-height: 39px;
+    overflow: hidden;
+    border-bottom: 1px solid #eaeaea;
+}*/
+.pages{
+
+    text-align: center;
+    height: 40px;
+    font-size: 3px;
+    margin-top: 65px;
+
+}
+
+.pages a{
+    background-color: white;
+    font-size: 15px;
+    border: 10px solid  white;
+    margin: 0px;
+    color: black;
+    text-decoration: none;
+}
+.pages a:hover {
+background-color: bisque;
+    border: 10px solid bisque;
+}

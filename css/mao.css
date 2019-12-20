@@ -1,0 +1,490 @@
+body {
+    background: #fae8c8;
+    overflow-x: hidden;
+    _background-attachment: fixed;
+    position: relative;
+}
+
+#content{
+    border: red solid 1px;
+}
+
+ol,ul {
+    list-style:none;}
+a {
+    text-decoration:none;}
+a:hover{
+    text-decoration:none;}
+.hide{
+    display:none;}
+
+.main{
+    width:990px;
+    margin:0px auto;}
+.main_w{
+    idth:100%;
+    position:relative;/*元素定位--relative相对定位--absolute绝对定位*/
+    z-index:500;}/*position元素定位后，用z-index设置层叠样式，值越大越浮现于最外层*/
+
+.clearfix:after {
+    content:"";
+    display:block;/*--block此元素显示为块级元素--none不会被显示--inline默认为内联元素*/
+    height:0;
+    clear:both;}/*after伪元素 可在元素后方插入元素
+                   clear：both清除浮动--none允许两边有浮动--both不允许有浮动--left--right左右*/
+.clearfix {zoom:1;}/*1、触发IE浏览器的haslayout 2、解决IE下的浮动，margin重叠等一些问题*/
+
+.listnav{
+    width:990px;
+    margin:0px auto;
+    margin-top:20px;
+    position:relative;
+}
+.listnav_ul{
+    height:50px;
+    width:990px;
+    background:rgba(255,255,255,0.5);}/*高级用法背景50%透明度*/
+.listnav_ul li{
+    display:inline-block;/*内联块级元素，行内块级元素，共享一行*/
+    vertical-align:top;/*设置元素的垂直对齐样式--top行中最高对齐--bottom最低--middle中间*/
+    height:50px;
+    line-height:50px;
+    color:#333;
+    font-size:16px;
+    font-weight:bold;/*normal bold bolder粗*/
+    float:left;}
+
+.listnav_ul li a.link{
+    color:#333;
+    display:inline-block;
+    vertical-align:top;
+    height:50px;
+    padding:0px 24px;
+    position:relative;}
+.listnav_ul li a.link:hover{
+    color:#ff3232;
+    background:rgba(255,255,255,0.5);}/*hover 选择器鼠标指针在其上浮动的链接设置样式*/
+.listnav_ul li.hover{
+    background:#fff;}
+.listnav_ul li.hover a.link{
+    color:#ff3232;}
+
+.listnav_con{
+    background:#fff;
+    width:990px;}
+.listnav_con dl{
+    /*padding:10px 16px 14px;*/
+    padding:10px 14px 14px;
+    display:inline-block;
+    vertical-align:top;}
+
+/*框内dl宽度设置--w框框的宽度*/
+.listnav_con dl.w990{
+    width:957px;}
+.listnav_con dl.w330{
+    width:297px;}
+.listnav_con dl.w210{
+    width:177px;}
+.listnav_con dl.w570{
+    width:537px;}
+.listnav_con dl.w495{
+    width:462px;}
+.listnav_con dl.w300{
+    width:267px;}
+.listnav_con dl.w360{
+    width:327px;}
+
+.listnav_con dl.br1{
+    border-right:1px solid #eee;}/*右边线*/
+.listnav_con dl.bb1{
+    border-bottom:1px solid #eee;}
+.listnav_con dl dt{
+    text-align:left;
+    display:Block;
+    height:42px;
+    line-height:42px;
+    font-size:24px;
+    color:#333;
+    font-family:"Microsoft Yahei";
+    position:relative;}
+
+.listnav_con dl dd{
+    font-size:14px;
+    color:#666;
+    display:inline-block;
+    vertical-align:top;}
+
+
+.listnav_con dl dd a{
+    padding:0px 8px;
+    display:inline-block;
+    vertical-align:top;
+    height:28px;
+    line-height:28px;
+    color:#666;}
+.listnav_con dl dd a:hover{
+    background:#ff3232;
+    color:#fff;}
+
+.bbtitles{
+    height:120px;
+    line-height:120px;
+    font-size:24px;
+    color:#222;
+    text-align:center;
+    font-family:Microsoft Yahei;
+    position:relative;
+    display:block;}
+.bbtitles a{
+    color:#222;
+    display:inline-block;
+    vertical-align:top;}
+
+
+.bbtitles a:hover{
+    color:#000;
+    text-decoration:underline;}
+.bbtitles span.paixu{line-height:48px;
+    position:absolute;
+    right:0px;
+    top:36px;
+    display:block;
+    height:48px;
+    font-size:12px;
+    font-family:宋体;
+    color:#666;}
+
+.bbtitles span.paixu a{
+    color:#666;}
+.bbtitles span.paixu a.current{
+    color:#ff3232;}
+.bbtitles span.paixu a:hover{
+    color:#ff3232;
+    text-decoration:underline;}
+
+.liststyle1_w{
+    width:988px;
+    margin:0px auto 20px;}
+.fliterstyle1{
+    float:left;
+    width:232px;
+    overflow:hidden;}
+.fliterstyle1_main
+{width:232px;
+    background:#fff;}
+.fliterstyle1_main .tab{
+    height:50px;
+    background:#f5f5f5;}
+.fliterstyle1_main .tab li{
+    float:left;
+    width:116px;
+    position:relative;}
+.fliterstyle1_main .tab li a{
+    display:block;
+    color:#333;
+    font-weight:bold;
+    text-align:center;
+    font-size:14px;
+    line-height:50px;}
+.fliterstyle1_main .tab li a:hover{
+    text-decoration:underline;}
+.fliterstyle1_main .tab li.current{
+    background:#fff;}
+.fliterstyle1_main .tab li.current a{
+    color:#ff3232;}
+.fliterstyle1_main .tabcon{
+    overflow:hidden;}
+.fliterstyle1_main .tabcon dl{}
+.fliterstyle1_main .tabcon dl dt{
+    display:block;
+    height:50px;
+    line-height:50px;
+    color:#333;
+    text-indent:14px;
+    font-size:14px;
+    background:url(../images/qi/liststyle1_icons.png) right -96px no-repeat;
+    border-bottom:1px solid #ddd;
+    float:left;
+    width:232px;}
+.fliterstyle1_main .tabcon dl dt a{
+    color:#333;}
+.fliterstyle1_main .tabcon dl dt a:hover{
+    text-decoration:underline;
+    color:#ff3232;}
+.fliterstyle1_main .tabcon dl dd{
+    display:none;
+    padding:14px 0px 6px 14px;
+    width:218px;
+    background:#fafafa;
+    border-bottom:1px solid #ddd;
+    loat:left;}
+.fliterstyle1_main .tabcon dl dd.row2 a{
+    float:left;
+    margin:0px 8px 8px 0px;
+    display:block;
+    height:30px;
+    width:202px;
+    border:1px solid #eee;
+    background:#fff;
+    color:#333;
+    line-height:30px;
+    font-size:12px;
+    text-align:center;
+    overflow:hidden;
+    position:relative;}
+.fliterstyle1_main .tabcon dl dd.row2 a span.yjtip{
+    position:absolute;
+    height:20px;
+    background:#60a531;
+    color:#e90808;
+    line-height:20px;
+    color:#fff;
+    padding:0px 5px;
+    display:inline-block;
+    vertical-align:top;
+    /**display:inline;*/
+    /**zoom:1;*/
+    left:5px;
+    top:5px;}
+.fliterstyle1_main .tabcon dl dd.row2 a strong{
+    display:inline-block;
+    vertical-align:top;
+    float:left;
+    padding-left:60px;}
+.fliterstyle1_main .tabcon dl dd.row2 a em{
+    display:inline-block;
+    vertical-align:top;
+    float:right;
+    padding-right:20px;
+    color:#999;}
+.fliterstyle1_main .tabcon dl dd.bb0{
+    border-bottom:0px;}
+.fliterstyle1_main .tabcon dl dd a{
+    float:left;
+    margin:0px 8px 8px 0px;
+    display:block;
+    height:30px;
+    width:96px;
+    border:1px solid #eee;
+    background:#fff;
+    color:#333;
+    line-height:30px;
+    font-size:12px;
+    text-align:center;
+    overflow:hidden;}
+.fliterstyle1_main .tabcon dl dd a:hover{
+    border:1px solid #aaa;
+    background:#fff url(../images/qi/liststyle1_icons.png) right -66px no-repeat;}
+.fliterstyle1_main .tabcon dl dd a.chosed{
+    border:1px solid #f3f3f3;
+    background:#fff url(../images/qi/liststyle1_icons.png) right -34px no-repeat;}
+.fliterstyle1_main .tabcon dl dd.long{
+    height:30px;line-height:30px;
+    color:#666;text-align:center;
+    padding:7px;
+    border-top:1px solid #eee;}
+.fliterstyle1_main .tabcon dl dd.long:hover{
+    background:#eee;
+    cursor:pointer;}
+.fliterstyle1_main .tabcon dl dd a.filter_otherbtn{
+    background:#ddd;
+    border:1px solid #ccc;
+    width:202px;}
+.fliterstyle1_main .tabcon dl dd a.filter_otherbtn:hover{
+    background:#ccc;}
+.fliterstyle1_main .tabcon dl dd div.others{
+    display:none;
+    float:left;}
+
+.fliterstyle1_main .tabcon dl dd a.filter_otherbtn{}
+.fliterstyle1_main .tabcon dl.on dt{
+    background-image:none;}
+.fliterstyle1_main .tabcon dl.on dd{
+    display:block;}
+
+
+
+/*搜索框部分样式*/
+.tabcon_scsearch{
+    height:50px;
+    width:232px;
+    border-bottom:1px solid #eee;
+    float:left;}
+.tabcon_scsearch div.w{
+    height:28px;
+    width:202px;
+    border:1px solid #ddd;
+    background:#fafafa;
+    margin:10px 14px;
+    position:relative;
+    overflow:hidden;}
+.tabcon_scsearch div.w input.text{
+    height:20px;
+    padding:4px;
+    line-height:20px;
+    width:160px;
+    border:0px;
+    background:none;
+    color:#999;
+    overflow:hidden;}
+.tabcon_scsearch div.w input.submit{
+    cursor:pointer;
+    border:0px;
+    background:none;
+    background:url(../images/qi/searchbtn1.png) 0px -6px no-repeat;
+    height:28px;
+    width:32px;
+    position:absolute;
+    right:0px;
+    top:0px;
+    overflow:hidden;}
+.tabcon_scsearch div.w input.submit:hover{
+    background-position:0px -46px;}
+
+/*图片部分*/
+.listtyle1_w{
+    float:left;
+    width:756px;}
+.listtyle1{
+    margin-left:20px;
+    background:#fff;
+    height:332px;
+    width:232px;
+    position:relative;
+    float:left;
+    margin-bottom:20px;
+    _display:inline;}
+
+
+.listtyle1 .gx{
+    display:inline-block;
+    vertical-align:top;
+    height:38px;
+    position:absolute;
+    right:-6px;
+    top:12px;
+    background:url(../images/qi/gxarrow.png) right 32px no-repeat;}
+.listtyle1 .gx span {
+    display:inline-block;
+    vertical-align:top;
+    height:32px;
+    padding:0px 12px;
+    background:#60a531;
+    line-height:32px;
+    color:#fff;
+    box-shadow:0px 1px 1px rgba(0,0,0,0.5);
+    font-size:14px;}
+
+
+/*图片下文字向上移动部分样式*/
+.listtyle1 a.big .i_w{
+    height:100px;
+    width:232px;
+    overflow:hidden;}
+.listtyle1 a.big .i_w .i{
+    height:200px;
+    width:232px;}
+.listtyle1 a.big .i_w .c1{
+    text-align: left;
+    height:100px;
+    width:232px;
+    overflow:hidden;}
+.listtyle1 a.big .i_w .c1 strong{
+    display:block;
+    height:24px;
+    line-height:24px;
+    padding:11px 14px 0px;
+    font-size:14px;
+    color:#333;
+    font-weight:bold;
+    overflow:hidden;}
+.listtyle1 a.big .i_w .c1 span{
+    display:block;
+    height:26px;
+    line-height:26px;
+    padding:0px 14px 0px;
+    font-size:12px;
+    color:#999;}
+.listtyle1 a.big .i_w .c1 em{
+    display:block;
+    height:23px;
+    line-height:23px;
+    padding:0px 14px 0px;
+    font-size:12px;
+    color:#ff3232;}
+.listtyle1 a.big .i_w .c2{
+    height:100px;
+    width:232px;
+    overflow:hidden;
+    background:#eee;}
+
+/*下拉文字的格式*/
+.listtyle1 a.big .i_w .c2 ul{
+    padding:20px 0px 15px 14px}
+.listtyle1 a.big .i_w .c2 ul li{
+    text-align: left;
+    float:left;height:32px;
+    width:208px;
+    background:url(../images/qi/list_style1_icons.png) no-repeat;
+    text-indent:32px;
+    line-height:32px;
+    color:#666;
+    font-size:14px;}
+.listtyle1 a.big .i_w .c2 ul{
+    padding:20px 0px 15px 14px}
+.listtyle1 a.big .i_w .c2 ul li{
+    float:left;
+    height:32px;
+    width:208px;
+    background:url(../images/qi/list_style1_icons.png) no-repeat;
+    text-indent:32px;
+    line-height:32px;
+    color:#666;
+    font-size:14px;}
+.listtyle1 a.big .i_w .c2 ul li.li2{
+    background-position:-9px -44px;}
+.listtyle1 a.big .i_w .c2 ul li.li1{
+    background-position:-9px -126px;}
+
+
+/*下面跳转页面的css*/
+.listtyle1_page{
+    height:40px;
+    margin:40px auto;
+    text-align:center;}
+.listtyle1_page_w{
+    display:inline-block;
+    vertical-align:top;
+    margin:0px auto;}
+.listtyle1_page_w a{
+    display:inline-block;
+    vertical-align:top;
+    *display:inline;
+    *zoom:1;
+    height:40px;
+    line-height:40px;
+    padding:0px 13px;
+    min-width:14px;
+    text-align:center;
+    margin-right:1px;
+    background:#f5f5f5;
+    white-space:nowrap;
+    color:#666;
+    font-size:14px;
+    _width:10px;}
+.listtyle1_page_w span{
+    display:inline-block;
+    vertical-align:top;
+    padding:0px 10px;
+    min-width:14px;
+    line-height:40px;}
+
+.listtyle1_page_w a:hover{
+    background:#ff3232;
+    color:#fff;}
+.listtyle1_page_w a.prev{
+    margin-right:20px;}
+.listtyle1_page_w a.next{
+    margin-left:20px;}
+
+/*css end*/
