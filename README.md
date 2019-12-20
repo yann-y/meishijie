@@ -6,5 +6,5 @@
 #### 软件架构
 采用JavaScript+jquery+html+css样式制作模仿美食杰网站
 
-[网站效果](http://http://food.youis.top/)
+[网站效果](http://food.youis.top/)
 
